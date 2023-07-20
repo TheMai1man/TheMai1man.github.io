@@ -3,12 +3,48 @@
     <head>
         <meta charset="utf-8">
         <title>Liam's Practice Website</title>
+        
+        <!-- CSS -->
         <style>
+            /*selecting by element*/
             body
             {
                 color: #000000;
                 background-color: #0004ff49;
+                font-family: sans-serif;
             }
+
+            h1
+            {
+                text-align: center;
+            }
+
+            /*descendant selector
+                list items inside of ordered lists
+            */
+            ul li
+            {
+                color: #ffffff;
+            }
+
+            td
+            {
+                text-align: center;
+            }
+
+            /*slecting by id*/
+            #sample_id
+            {
+                color: #700774;
+            }
+
+            /*selecting by class*/
+            .lists
+            {
+                background-color: #c92626;
+            }
+
+            
         </style>
     </head>
     <body>
@@ -17,21 +53,65 @@
         <h2>Welcome!</h2>
         <p>This is a website for the implementation of new learnings to cement my own knowledge,<br>and may also double as a portfolio of my web development skills.</p>
 
-        <h3>Text</h3>
+
+        <!-- internal links -->
+        <h2>Contents</h2>
+        <ol>
+            <li><a href="#1-0">Text</a></li>
+        </ol>
+
+
+        <!-- changing text emphasis -->
+        <h3 id="1-0">Text</h3>
         <p>Text can be in <em>italics</em> or in <strong>bold</strong></p>
 
-        <h3>Lists</h3>
-        <ul>
+
+        <!-- ordered and unordered lists -->
+        <h3 id="sample_id">Lists</h3>
+
+        <ul class="lists">
             <li>unordered</li>
             <li>list</li>
         </ul>
-        <ol>
+
+        <ol class="lists">
             <li>ordered lists</li>
             <li>add importance to items higher up</li>
         </ol>
 
+
+        <!-- adding images -->
         <h3>Images</h3>
         <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" alt="HTML5 icon surrounded by common HTML tags" width="300">
+
+
+        <!-- links to external domains -->
+        <h3>External Links</h3>
+        <p><a target="_blank" href="https://www.khanacademy.org/">Khan Academy</a>:<br>
+            Where I began my software development journey back in 2014, and the core learning resource thus far in learning JS, HTML and CSS to create this website.</p>
+
+
+        <!-- tables -->
+        <h3>Tables</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>High Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TheMailman</td>
+                    <td>100</tr>
+                </tr>
+                <tr>
+                    <td>Preying Mantis</td>
+                    <td>9001</td>
+                </tr>
+            </tbody>
+        </table>
+
 
     </body>
 </html>
